@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>欢迎来到登录界面</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.dljm{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				background-image: url(dl.jpg);
+				text-align: center;
+			}
+			.dljm_center{
+				width: 400px;
+				height: 300px;
+				margin: 200px auto;
+				margin-bottom: 200px;
+			}
+			.hytext{
+				width: 398px;
+				height: 60px;
+				text-align: center;
+				line-height: 60px;
+				font-style: oblique;
+				color:#ffffff ;
+			}
+			.hytext_down{
+				width: 398px;
+				height: 300px;
+			}
+			.yhm{
+				margin-top: 15px;
+				width: 398px;
+				height: 40px;
+				text-align: center;
+			}
+			.yhm label{
+				font-size: 15px;
+				line-height: 40px;
+			}
+			.yhm input{
+				width: 200px;
+				height: 30px;
+				border: 1px solid#FFFFFF;
+				border-radius: 18px;
+			}
+			.mm{
+				margin-top: 15px;
+				width: 398px;
+				height: 40px;
+				text-align: center;
+			}
+			.mm label{
+				font-size: 15px;
+				line-height: 40px;
+			}
+			.mm input{
+				width: 200px;
+				height: 30px;
+				border: 1px solid#FFFFFF;
+				border-radius: 18px;
+			}
+			.Button{
+				margin-top: 15px;
+				width: 400px;
+				height: 40px;
+				text-align: center;
+			}
+			.Button button{
+				width: 150px;
+				height: 40px;
+				font-size: 15px;
+				border: 1px solid#FFFFFF;
+				border-radius: 18px;
+				margin-left: 30px;
+			}
+			.dxk{
+				margin-top: 20px;
+				width: 300px;
+				height: 20px;
+				border: 1px solid#f00;
+				margin: 0 auto;
+			}
+			.dxk input{
+				float: left;
+				width: 15px;
+				height: 15px;
+				margin-left: 60px;
+				margin-top: 2px;
+			}
+			.dxk span{
+				float: left;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="dljm">
+			<div class="dljm_center">
+				<div class="hytext">
+					<h3>xx公司用户管理系统</h3>
+				</div>
+				<div class="hytext_down">
+					<p class="yhm"> 
+					 <label>用户名</label>
+					 <input type="text" name="username"  autocomplete="off" />
+					</p>
+					<p class="mm"> 
+					 <label>密&nbsp &nbsp码</label>
+					 <input type="text" name="username"  autocomplete="off" />
+					</p>
+					<div class="dxk">
+							<input type="checkbox" name="baocun" value="" /><span>记住用户名</span>
+							<input type="checkbox" name="baocun" value="" /><span>自动登录</span>
+					</div>
+					
+					<div class="Button">
+						<button>登录</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
