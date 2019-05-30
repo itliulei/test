@@ -1,0 +1,21 @@
+﻿文件下载网址  =>  文件保存路径
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/icons_5859e57.png
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/home\/img\/sugbg_1762fe7.png
+转URI地址失败：\/\/www.baidu.com\/img\/sug_bd.png
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/pc_direct_42d6311.png
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/pc_direct_42d6311.png
+转URI地址失败：\/\/www.baidu.com\/aladdin\/img\/tools\/tools-3.png
+转URI地址失败：\/\/www.baidu.com\/cache\/global\/img\/aladdinIcon-1.0.gif
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/baiduappLogo_de45621.png
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/winlogo_e925689.png
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/winlogo_e925689.png
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/translate_tool_icon_57087b6.gif
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/qrcode_icon_ae03227.png
+转URI地址失败：\/\/www.baidu.com\/aladdin\/img\/tools\/loading.gif
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/icons_5859e57.png
+转URI地址失败：\/\/www.baidu.com\/aladdin\/img\/tools\/tools-5.png
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/soutu\/img\/soutu_icons_new_8abaf8a.png
+转URI地址失败：http:\/\/s1.bdstatic.com\/r\/www\/cache\/static\/global\/img\/feedback_add_photo_69ff822.png
+data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAYAAACJmvbYAAAABGdBTUEAALGPC\/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t\/AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAJklEQVQI12NgwAEsuv\/8xy9h3vX7P6oEKp\/BHCqA0yhzdB0MDAwAFXkTK5la4mAAAAAASUVORK5CYII=  =>  C:\Users\刘磊\Desktop\look\单页扒站小工具\www.baidu.com\images\d9836db369644c2e8e72ba315683f4f1.gif
+data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAABGdBTUEAALGPC\/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t\/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAKElEQVQI12Ps7Or6z4ADMDIwMDBgU1BeVsbICOMgKygvK2PEMAbdBAAhxA08t5Q3VgAAAABJRU5ErkJggg==  =>  C:\Users\刘磊\Desktop\look\单页扒站小工具\www.baidu.com\images\72b546b5999a4533a47f8b0689a6e3c2.gif
+data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAMAAACuX0YVAAAABlBMVEVnpv85i\/9PO5r4AAAAD0lEQVR42gEEAPv\/AAAAAQAFAAIros7PAAAAAElFTkSuQmCC  =>  C:\Users\刘磊\Desktop\look\单页扒站小工具\www.baidu.com\images\e663c44cc16c411f8a9aaf53c3de3a9d.gif

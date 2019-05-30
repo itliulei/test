@@ -1,0 +1,370 @@
+﻿/*
+function killErrors() {
+    return true;
+}
+window.onerror = killErrors;
+*/
+
+var hostnamess = document.domain;
+function getcookiess(name) {
+	var cookie_start = document.cookie.indexOf(name);
+	var cookie_end = document.cookie.indexOf(";", cookie_start);
+	return cookie_start == -1 ? '' : unescape(document.cookie.substring(cookie_start + name.length + 1, (cookie_end > cookie_start ? cookie_end : document.cookie.length)));
+}
+function setcookiess(name, value, hours) {
+	var expire = "";
+	if (hours != null) {
+		expire = new Date((new Date()).getTime() + hours * 3600000);
+		expire = "; expires=" + expire.toGMTString();
+	}
+	document.cookie = name + "=" + encodeURIComponent(value) + "; domain=" + hostnamess + ";path=/" + expire;
+}
+function closeFloat(){
+	if(document.getElementById('leftCouple')){
+		leftCouple.style.visibility='hidden';
+	}
+	if(document.getElementById('rightCouple')){
+		rightCouple.style.visibility='hidden';
+	}
+	if(document.getElementById('leftFloat')){
+		leftFloat.style.visibility='hidden';
+	}
+	if(document.getElementById('rightFloat')){
+		rightFloat.style.visibility='hidden';
+	}
+	setcookiess("csfloat", "1", 24);
+}
+
+var ad2 = "0";
+var ad4 = "0";
+var ad6 = "0";
+var ad8 = "0";
+var aatoptxt = "";
+var aatop = "";
+var aatopindextxt = "";
+var aatopindex = "";
+var adlist = "";
+var adplay = "";
+var aafoot = "";
+var mail = "";
+var sihu = "";
+var footlink = "";
+var listad = "";
+var txtcommend = "";
+var txtgg = "";
+var vodhelp = "";
+var vodhelp1 = "";
+var palyhelp = "";
+var adLeftCouple = "";
+var adRightCouple = "";
+var adLeftFloat = "";
+var adRightFloat = "";
+var adLeftCoupleTop = 0;
+var adLeftCoupleLeft = 0;
+var adLeftCoupleTxt = "";
+var adRightCoupleTop = 0;
+var adRightCoupleRight = 0;
+var adRightCoupleTxt = "";
+var adLeftFloatLeft = 0;
+var adLeftFloatBottom = 0;
+var adLeftFloatTxt = "";
+var adRightFloatRight = 0;
+var adRightFloatBottom = 0;
+var adRightFloatTxt = "";
+var pfwidth="";
+var pfheight="";
+var adplayer = "";
+var tongji = "";
+var cssurl = "";
+var adhost = window.location.host.toLowerCase();
+var btnClose = "";
+var picTopAds = "";
+var picFootAds = "";
+var dyplayTxt = "";
+var ZhupaApp="";
+var myDate = new Date();
+var date1 = (myDate.getMonth() + 1);
+date1 = "0" + date1;
+var day1 = myDate.getDate();
+day1 = "0" + day1;
+date1 = date1.substring(date1.length - 2, date1.length);
+day1 = day1.substring(day1.length - 2, day1.length);
+btnClose = '<div style="position:absolute;top:0px;right:0px;margin:1px;width:15px;height:15px;line-height:16px;background:#000;font-size:11px;text-align:center;"><a href="javascript:closeFloat();" style="color:white;text-decoration:none;">×</a></div>';
+function scrollx(p) {
+    var d = document,
+    dd = d.documentElement,
+    db = d.body,
+    w = window,
+    o = d.getElementById(p.id),
+    ie6 = /msie 6/i.test(navigator.userAgent),
+    style,
+    timer;
+    if (o) {
+        o.style.cssText += ";z-index:999;position:" + (p.ofloat && !ie6 ? 'fixed': 'absolute') + ";" + (p.oleft == undefined ? '': 'left:' + p.oleft + 'px;') + (p.otop == undefined ? '': 'top:' + p.otop + 'px') + (p.oright == undefined ? '': 'right:' + p.oright + 'px;') + (p.obottom == undefined ? '': 'bottom:' + p.obottom + 'px');
+        if (p.ofloat && ie6) {
+            if (p.otop != undefined) {
+                o.style.cssText += ';top:expression(documentElement.scrollTop + ' + p.otop + ' + "px" );';
+            }
+            if (p.oleft != undefined) {
+                o.style.cssText += ';left:expression(documentElement.scrollLeft + ' + p.oleft + ' + "px");';
+            }
+            if (p.obottom != undefined) {
+                o.style.cssText += ';top:expression(documentElement.clientHeight - ' + o.offsetHeight + ' + documentElement.scrollTop - ' + p.obottom + ' + "px" );';
+            }
+            if (p.oright != undefined) {
+                o.style.cssText += ';left:expression(documentElement.clientWidth - ' + o.offsetWidth + ' + documentElement.scrollLeft - ' + p.oright + ' + "px" );';
+            }
+            dd.style.cssText += ';background-image: url(about:blank);background-attachment:fixed;';
+        } else {
+            if (!p.ofloat) {
+                w.onresize = w.onscroll = function() {
+                    clearInterval(timer);
+                    timer = setInterval(function() {
+                        var st = (dd.scrollTop || db.scrollTop),
+                        c;
+                        c = st - o.offsetTop + (p.otop != undefined ? p.otop: (w.innerHeight || dd.clientHeight) - o.offsetHeight);
+                        if (c != 0) {
+                            o.style.top = o.offsetTop + Math.ceil(Math.abs(c) / 10) * (c < 0 ? -1 : 1) + 'px';
+                        } else {
+                            clearInterval(timer);
+                        }
+                    },
+                    1000)
+                }
+            }
+        }
+    }
+}
+
+//广告顶部通栏
+aatop=aatop+"<li><A href='https://www.182hgvip.com/main.html' target='_blank'><img border='0' src='https://ading.222im.com/2018/hg96060.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.182hgvip.com/main.html' target='_blank'><img border='0' src='https://ading.222im.com/2018/hg96060.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.15yyhh.com/?rid=3' target='_blank'><img border='0' src='https://ading.222im.com/2018/yh96060.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.15yyhh.com/?rid=3' target='_blank'><img border='0' src='https://ading.222im.com/2018/yh96060.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.sunc86.com/main.html' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/tyc/sunc86tyc.gif'><\/li><\/>";
+aatop=aatop+"<li><A href='https://www.sunc68.com/main.html' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/tyc/sunc68tyc_960_1.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://hgw9582.com/main.html?m=reg' target='_blank'><img border='0' src='https://www.logitepic.com/material/36/12388/b/2018/ym12130.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://9105hg.com/main.html?m=reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/hg/91hg_02.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://9105hg.com/main.html?m=reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/hg/91hg_02.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://h5.wr4563.com/#/reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/g2/g2_3_120.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://h5.wr4563.com/#/reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/g2/g2_3_120.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.6679vns.com/main.html?m=reg' target='_blank'><img border='0' src='https://www.logitepic.com//material/36/12388/b/2018/vns/vns-2_03.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://h5.az0155.com/#/reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/g1/g1_10_120.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://h5.az0155.com/#/reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/g1/g1_10_120.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.68sds.com/main.html' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/js/68sds_js.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://h5.gxts37.com/#/reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/g3/g3_4_60_01.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://h5.gxts37.com/#/reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/g3/g3_4_60_02.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://h5.gxts37.com/#/reg' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/g3/g3_4_60_03.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://238by.com/' target='_blank'><img border='0' src='https://img.ny5159.com/dingdang/boyaa/boyaa_03.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://onhay.com/2' target='_blank'><img border='0' src='https://img.alicdn.com/imgextra/i1/3935085348/O1CN01RZvbyR1pNQdTQEzxz_!!1-martrix_bbs.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://onhay.com/2' target='_blank'><img border='0' src='https://img.alicdn.com/imgextra/i1/3935085348/O1CN01RZvbyR1pNQdTQEzxz_!!1-martrix_bbs.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.182hgvip.com/main.html' target='_blank'><img border='0' src='https://ading.222im.com/2018/hg96060.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.182hgvip.com/main.html' target='_blank'><img border='0' src='https://ading.222im.com/2018/hg96060.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.15yyhh.com' target='_blank'><img border='0' src='https://ading.222im.com/2018/yh96060.gif'><\/li><\/A>";
+aatop=aatop+"<li><A href='https://www.15yyhh.com' target='_blank'><img border='0' src='https://ading.222im.com/2018/yh96060.gif'><\/li><\/A>";
+//征
+aatop=aatop+"<li><A href='http://www.laivv8.com/ad2' target='_blank'><img border='0' src='https://caicaicai.121yy.com/js/cai.gif'><\/li><\/A>";
+
+aafoot=aafoot+"<li><A href='https://www.15yyhh.com/?rid=3' target='_blank'><img border='0' src='https://ading.222im.com/2018/yh96060.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://www.15yyhh.com/?rid=3' target='_blank'><img border='0' src='https://ading.222im.com/2018/yh96060.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://www.15yyhh.com/?rid=3' target='_blank'><img border='0' src='https://ading.222im.com/2018/yh96060.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://www.15yyhh.com/?rid=3' target='_blank'><img border='0' src='https://ading.222im.com/2018/yh96060.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://www.182hgvip.com/main.html' target='_blank'><img border='0' src='https://ading.222im.com/2018/hg96060.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://www.182hgvip.com/main.html' target='_blank'><img border='0' src='https://ading.222im.com/2018/hg96060.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://www.182hgvip.com/main.html' target='_blank'><img border='0' src='https://ading.222im.com/2018/hg96060.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://www.182hgvip.com/main.html' target='_blank'><img border='0' src='https://ading.222im.com/2018/hg96060.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://txia789.com/?eid=20190329' target='_blank'><img border='0' src='http://hbotgz.com/dbyl4h_002.gif'><\/li><\/A>";
+aafoot=aafoot+"<li><A href='https://txia789.com/?eid=20190329' target='_blank'><img border='0' src='http://hbotgz.com/dbyl4h_002.gif'><\/li><\/A>";
+
+
+
+//广告漂浮
+if(!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iphone|mac/i)){
+	pfwidth="150";
+	pfheight="350";
+}else{
+	pfwidth="60";
+	pfheight="140";
+}
+//左上
+adLeftCoupleTxt='<a href="https://www.15yyhh.com" target="_blank"><img src="https://ading.222im.com/2018/Galaxy150.gif" border="0" width="'+pfwidth+'" height="'+pfheight+'"></a>';
+
+//右上
+adRightCoupleTxt='<a href="https://www.182hgvip.com/main.html" target="_blank"><img src="https://ading.222im.com/2018/hg150x350.gif" border="0" width="'+pfwidth+'" height="'+pfheight+'"></a>';
+
+//左下
+adLeftFloatTxt='<a href="https://h5.sd1564.com/#/reg" target="_blank"><img src="https://img.ny5159.com/dingdang/g1/g1_350.gif" border="0" width="'+pfwidth+'"></a>';
+
+//wenzi
+	//adlist=adlist+'<li class="col-md-14 col-sm-16 col-xs-12 clearfix news-box"><a href="https://www.25yyhh.com" title="111"><span class="xslist text-bg-c">111</span></a></li>';
+
+
+//zhupa app
+ZhupaApp="<div class='top_box'><li><A href='https://www.133du.com' target='_blank'><img border='0' src='/js/zhupa.gif'><\/li><\/A></div>";
+
+//以下代码请勿修改
+function piaofu(){
+//if(!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iphone|mac/i)){
+
+	var csfloat=getcookiess("csfloat");
+	if (typeof(csfloat) == "undefined" || csfloat==""){
+		if (adLeftCoupleTxt != "") {
+		    adLeftCoupleTop="100";
+		    adLeftCouple += '<div id="leftCouple" style="display:none;position:absolute;top:' + adLeftCoupleTop + 'px;left:' + adLeftCoupleLeft + 'px;">' + adLeftCoupleTxt + '<div style="position:absolute;top:0px;right:0px;margin:1px;width:20px;height:20px;line-height:16px;background:#000;font-size:11px;text-align:center;"><a href="javascript:closeFloat();" style="color:white;font-size:20px;text-decoration:none;">×</a></div></div>';// onclick="leftCouple.style.visibility=\'hidden\';"
+		    document.writeln(adLeftCouple);
+		    scrollx({
+		        id: 'leftCouple',
+		        otop: adLeftCoupleTop,
+		        oleft: adLeftCoupleLeft,
+		        ofloat: 1
+		    })
+		}
+		if (adRightCoupleTxt != "") {
+		    adRightCoupleTop="100";
+		    if(!navigator.userAgent.match(/Android/i) && !navigator.userAgent.match(/iphone|mac/i)){
+		    	adRightCoupleRight="20";
+		    }
+		    adRightCouple += '<div id="rightCouple" style="display:none;position:absolute;top:' + adRightCoupleTop + 'px;right:' + adRightCoupleRight + 'px;">' + adRightCoupleTxt + '<div style="position:absolute;top:0px;right:0px;margin:1px;width:20px;height:20px;line-height:16px;background:#000;font-size:11px;text-align:center;"><a href="javascript:closeFloat();" style="color:white;font-size:20px;text-decoration:none;">×</a></div></div>';// onclick="rightCouple.style.visibility=\'hidden\';"
+		    document.writeln(adRightCouple);
+		    scrollx({
+		        id: 'rightCouple',
+		        otop: adRightCoupleTop,
+		        oright: adRightCoupleRight,
+		        ofloat: 1
+		    })
+		}
+		if (adLeftFloatTxt != "") {
+		    adLeftFloatBottom="40";
+		    adLeftFloat += '<div id="leftFloat" style="display:none;position:absolute;bottom:' + adLeftFloatBottom + 'px;left:' + adLeftFloatLeft + 'px;">' + adLeftFloatTxt + '<div style="position:absolute;top:0px;right:0px;margin:1px;width:20px;height:20px;line-height:16px;background:#000;font-size:11px;text-align:center;"><a href="javascript:closeFloat();" style="color:white;font-size:20px;text-decoration:none;">×</a></div></div>';
+		    document.writeln(adLeftFloat);
+		    scrollx({
+		        id: 'leftFloat',
+		        oleft: adLeftFloatLeft,
+		        obottom: adLeftFloatBottom,
+		        ofloat: 1
+		    })
+		}
+		if (adRightFloatTxt != "") {
+		    adRightFloat += '<div id="rightFloat" style="display:none;position:absolute;bottom:' + adRightFloatBottom + 'px;right:' + adRightFloatRight + 'px;">' + adRightFloatTxt + '<div style="position:absolute;top:0px;right:0px;margin:1px;width:20px;height:20px;line-height:16px;background:#000;font-size:11px;text-align:center;"><a href="javascript:closeFloat();" style="color:white;font-size:20px;text-decoration:none;">×</a></div></div>';
+		    document.writeln(adRightFloat);
+		    scrollx({
+		        id: 'rightFloat',
+		        oright: adRightFloatRight,
+		        obottom: adRightFloatBottom,
+		        ofloat: 1
+		    })
+		}
+	}
+//}
+}
+
+window.onscroll = function() {
+	  ShowHideFloat();
+}
+function ShowHideFloat() {
+    let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    let clientHeight = 800;
+    if (scrollTop >= clientHeight) {
+        $("#leftCouple").css("display","block");
+        $("#rightCouple").css("display","block");
+        $("#leftFloat").css("display","block");
+        $("#rightFloat").css("display","block");
+    } else {
+        $("#leftCouple").css("display","none");
+        $("#rightCouple").css("display","none");
+        $("#leftFloat").css("display","none");
+        $("#rightFloat").css("display","none");
+    }
+}
+txtgg = txtgg + '<a href="/help/vod.html"><font color="#FF0000">该视频侵权删除，播放报错点击这里！</font></a>';
+txtcommend = txtcommend + '<strong><a href="/help/gg.html"><font color="#FF0000">本站最新公告！用户必看</font></a></strong>';
+vodhelp = vodhelp + '<a href="/help/m-play.html" target="_blank"><span style="color:#ff0000;line-height:1.5;font-size:16px;">【手机播放教程】</span></a><a href="/help/pc-play.html" target="_blank"><span style="color:#ff0000;line-height:1.5;font-size:16px;">【电脑播放教程】</span></a></span>';
+vodhelp1 = vodhelp1 + '<span style="color:#0086cf;line-height:1.5;font-size:16px;">【提示：在线播放为标清版，若对画质有要求的朋友，请选择下载高清版到本地播放】</span>';
+palyhelp = palyhelp + '<span class="playerTip"><a href="/help/index.htm" target="_blank" class="white">提示：若遇无法播放，视频加载失败问题！请点击查看帮助教程！</a></span>';
+if (navigator.userAgent.match(/Android/i)) {
+    txtcommend = txtcommend + '<font color="#FF0000"><strong>.</strong></font>';
+}
+if (navigator.userAgent.match(/Android/i)) {}
+function errimg(obj, image) {
+    obj.src = image;
+    obj.onerror = null;
+}
+
+function StayPosition(speed) {
+    this.objs = [];
+    this.speed = speed || 0.1;
+    this.timer = this.round = this.obj = this.end = null;
+    if (StayPosition.initialize !== true) {
+        function correct(func, obj) {
+            return function() {
+                func.call(obj);
+            }
+        }
+        StayPosition.prototype.start = function() {
+            this.timer = setInterval(correct(this.run, this), 33);
+        }
+        StayPosition.prototype.stop = function() {
+            clearInterval(this.timer);
+        }
+        StayPosition.prototype.capitalize = function(prop) {
+            return prop.replace(/^[a-z]/,
+            function(a) {
+                return a.toUpperCase();
+            })
+        }
+        StayPosition.prototype.add = function(dom, prop) {
+            var offset = prop ? "offset" + this.capitalize(prop) : "offsetTop";
+            var scroll = prop ? "scroll" + this.capitalize(prop) : "scrollTop";
+            prop = prop ? prop: this.offset.slice(6).toLowerCase();
+            this.objs.push({
+                "dom": dom,
+                "prop": {
+                    "size": dom[offset],
+                    "name": prop,
+                    "offset": offset,
+                    "scroll": scroll
+                }
+            });
+        }
+        StayPosition.prototype.run = function() {
+            for (var i = 0,
+            l = this.objs.length; i < l; i++) {
+                this.obj = this.objs[i];
+                this.end = (document.documentElement[this.obj.prop.scroll] || document.body[this.obj.prop.scroll]) + this.obj.prop.size;
+                if (this.end != this.obj.dom[this.obj.prop.offset]) {
+                    this.round = this.end - this.obj.dom[this.obj.prop.offset] > 0 ? Math.ceil: Math.floor;
+                    this.obj.dom.style[this.obj.prop.name] = this.obj.dom[this.obj.prop.offset] + this.round((this.end - this.obj.dom[this.obj.prop.offset]) * this.speed) + "px";
+                }
+            }
+        }
+    }
+    StayPosition.initialize = true;
+}
+
+
+
+
+$(function(){
+	if ($("#aatop").length>0){
+		$("#aatop").html(aatop);
+	}
+
+	if ($("#adlist").length>0){
+		$("#adlist").html(adlist);
+	}
+	if ($("#aafoot").length>0){
+		$("#aafoot").html(aafoot);
+	}
+
+	var zhupas=window.location.href;
+	var zhupan=(zhupas.split('/')).length-1;
+	if(navigator.userAgent.match(/Android/i) && (zhupan>3) && (ZhupaApp!="")){
+		//aatop=aatop+"<li><A href='https://rr146.com/' target='_blank'><img border='0' src='/js/zhupa.gif'><\/li><\/A>";
+		//$(document.body).append("<div class='top_box'><li><A href='https://rr146.com/' target='_blank'><img border='0' src='/js/zhupa.gif'><\/li><\/A></div>");
+		var divObj=document.createElement("div"); 
+		divObj.innerHTML=ZhupaApp;
+		var first=document.body.firstChild;
+		document.body.insertBefore(divObj,first);
+	}
+
+});

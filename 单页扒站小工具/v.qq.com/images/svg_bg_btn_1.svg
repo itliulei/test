@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 47">
+	<linearGradient id="__gradient_btn1" gradientUnits="userSpaceOnUse" x1="-238.265" y1="410.643" x2="-237.125" y2="410.643" gradientTransform="matrix(128 0 0 -42 30481 17269)">
+		<stop offset="0" stop-color="#ffbe40"/>
+		<stop offset=".336" stop-color="#fc5131"/>
+		<stop offset="1" stop-color="#ff1559"/>
+	</linearGradient>
+	<view id="before" viewBox="0 0 130 47"/>
+	<view id="after" viewBox="0 47 130 47"/>
+	<g id="g_before">
+		<path d="M108.2 44c.1.3.2.7.3 1H23C10.8 45 1 35.2 1 23S10.8 1 23 1h84c12.2 0 22 9.8 22 22 0 5.2-1.8 9.9-4.8 13.7-.2-.3-.4-.5-.7-.8 2.8-3.6 4.4-8 4.4-12.9 0-11.6-9.4-21-21-21H23C11.4 2 2 11.4 2 23s9.4 21 21 21h85.2z" fill="url(#__gradient_btn1)"/>
+		<path d="M115.6 38.1l4.3 3.1c.4.3.6.9.2 1.4-.1.1-.1.2-.2.2l-4.3 3.1c-.4.3-1.1.2-1.4-.2-.1-.2-.2-.4-.2-.6V39c0-.6.4-1 1-1 .2-.1.4 0 .6.1z" fill="#ff5c38"/>
+	</g>
+	<g id="g_after" transform="translate(0,47)">
+		<path d="M124.2 36.7c-1.6-2.2-4.3-3.7-7.2-3.7-5 0-9 4-9 9 0 1 .2 2 .5 3H23C10.8 45 1 35.2 1 23S10.8 1 23 1h84c12.2 0 22 9.8 22 22 0 5.2-1.8 9.9-4.8 13.7z" fill="url(#__gradient_btn1)"/>
+		<path d="M115.6 38.1l4.3 3.1c.4.3.6.9.2 1.4-.1.1-.1.2-.2.2l-4.3 3.1c-.4.3-1.1.2-1.4-.2-.1-.2-.2-.4-.2-.6V39c0-.6.4-1 1-1 .2-.1.4 0 .6.1z" fill="#ff316a"/>
+	</g>
+</svg>
